@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind CSS Project</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+    
+      <!-- Header -->
+      <header class="bg-gray-800 text-white p-3">
+        <nav class="flex items-center justify-between">
+          <a class="text-xl font-bold" href="#">Brand</a>
+          <button class="lg:hidden p-2 text-white focus:outline-none" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 7.5h16.5m-16.5 7.5h16.5" />
+            </svg>
+          </button>
+          <div class="hidden lg:flex space-x-4">
+            <a class="hover:text-gray-300" href="#">Home</a>
+            <div class="relative group">
+              <button class="hover:text-gray-300">About</button>
+              <ul class="absolute hidden group-hover:block bg-white text-gray-800 py-2 shadow-lg">
+                <li><a class="block px-4 py-2 hover:bg-gray-100" href="#">Team</a></li>
+                <li><a class="block px-4 py-2 hover:bg-gray-100" href="#">History</a></li>
+              </ul>
+            </div>
+            <a class="hover:text-gray-300" href="#">Contact</a>
+          </div>
+        </nav>
+      </header>
+    
+      <!-- Main Layout -->
+      <main class="container mx-auto my-4 px-4">
+        <div class="flex flex-wrap -mx-4">
+          <!-- Left Column -->
+          <aside class="w-full lg:w-1/4 px-4 mb-4">
+            <div class="relative">
+              <img src="img1.jpg" alt="Image 1" class="w-full h-auto">
+            </div>
+          </aside>
+    
+          <!-- Main Column -->
+          <section class="w-full lg:w-1/2 px-4 mb-4">
+            <h3 class="text-lg font-semibold mb-4">Main Content</h3>
+            <div>
+              <details open class="mb-2">
+                <summary class="cursor-pointer bg-gray-100 p-2">Розділ 1</summary>
+                <div class="p-2 bg-gray-50">Це контент першої секції.</div>
+              </details>
+              <details class="mb-2">
+                <summary class="cursor-pointer bg-gray-100 p-2">Розділ 2</summary>
+                <div class="p-2 bg-gray-50">Це контент другої секції.</div>
+              </details>
+              <details>
+                <summary class="cursor-pointer bg-gray-100 p-2">Розділ 3</summary>
+                <div class="p-2 bg-gray-50">Це контент третьої секції.</div>
+              </details>
+            </div>
+          </section>
+    
+          <!-- Right Column -->
+          <aside class="w-full lg:w-1/4 px-4 mb-4">
+            <h3 class="text-lg font-semibold mb-4">Right Sidebar</h3>
+            <ul class="space-y-2">
+              <li><a class="block bg-gray-100 p-2 rounded hover:bg-gray-200" href="#link1">Посилання 1</a></li>
+              <li><a class="block bg-gray-100 p-2 rounded hover:bg-gray-200" href="#link2">Посилання 2</a></li>
+              <li><a class="block bg-gray-100 p-2 rounded hover:bg-gray-200" href="#link3">Посилання 3</a></li>
+              <li><a class="block bg-gray-100 p-2 rounded hover:bg-gray-200" href="#link4">Посилання 4</a></li>
+            </ul>
+            <div class="mt-4 p-3 bg-gray-50 border rounded">
+              <h5 class="font-semibold">Інформаційний блок</h5>
+              <p class="text-sm">Це може бути текстовий контент, реклама чи інша інформація.</p>
+            </div>
+          </aside>
+        </div>
+    
+        <!-- Form -->
+        <section class="my-4">
+          <h3 class="text-lg font-semibold mb-4">Form Section</h3>
+          <form class="space-y-4">
+            <div>
+              <label for="name" class="block font-medium">Name</label>
+              <input type="text" id="name" class="w-full p-2 border rounded">
+            </div>
+            <div>
+              <label for="email" class="block font-medium">Email</label>
+              <input type="email" id="email" class="w-full p-2 border rounded">
+            </div>
+            <div>
+              <label for="password" class="block font-medium">Password</label>
+              <input type="password" id="password" class="w-full p-2 border rounded">
+            </div>
+            <div>
+              <label for="gender" class="block font-medium">Gender</label>
+              <select id="gender" class="w-full p-2 border rounded">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div>
+              <label for="bio" class="block font-medium">Bio</label>
+              <textarea id="bio" class="w-full p-2 border rounded"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Submit</button>
+          </form>
+        </section>
+      </main>
+    
+      <!-- Footer -->
+      <footer class="bg-gray-800 text-white text-center p-3">
+        Footer content here.
+      </footer>
+    
+    </body>
+    </html>
+    
+</body>
+</html>
+

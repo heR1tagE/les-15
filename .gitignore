@@ -1,0 +1,4 @@
+dist/styles.css
+node_modules/
+.cache/
+.env
